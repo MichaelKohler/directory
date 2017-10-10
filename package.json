@@ -7,11 +7,15 @@
     "url": "git@github.com:fxos/directory.git"
   },
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "MPL",
   "dependencies": {
     "fxos-build": "0.7.x",
-    "gulp": "3.8.x"
-  }
+    "gulp": "3.8.x",
+    "snyk": "^1.42.5"
+  },
+  "snyk": true
 }
